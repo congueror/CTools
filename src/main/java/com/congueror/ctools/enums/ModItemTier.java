@@ -11,8 +11,16 @@ import net.minecraft.util.LazyValue;
 public enum ModItemTier implements IItemTier
 {
 	//HarvestLvl, Durability, Efficiency(Wood = 2.0, Diamond = 10.0), Attack Damage(Wood = 0), Enchantibility(Wood = 15), RepairMat
-	TIN(1, 31, 2.5f, 1.0f, 9, () -> {
+	TIN(1, 31, 2.5f, 1.0f, 13, () -> {
 		return Ingredient.fromItems(ItemInit.TIN_INGOT.get());
+	}),
+	
+	COPPER(2, 134, 3.0f, 1.0f, 11, () -> {
+		return Ingredient.fromItems(ItemInit.COPPER_INGOT.get());
+	}),
+	
+	STEEL(2, 1306, 7.0f, 3.0f, 8, () -> {
+		return Ingredient.fromItems(ItemInit.STEEL_INGOT.get());
 	});
 	
 	private final int harvestLevel;

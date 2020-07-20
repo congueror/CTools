@@ -2,6 +2,7 @@ package com.congueror.ctools.init;
 
 import com.congueror.ctools.ConguerorTools;
 import com.congueror.ctools.CtoolsItemGroup;
+import com.congueror.ctools.enums.ModArmorMaterial;
 import com.congueror.ctools.enums.ModItemTier;
 
 import net.minecraft.inventory.EquipmentSlotType;
@@ -26,11 +27,35 @@ public class ItemInit
     public static final RegistryObject<Item> TIN_PICKAXE = ITEMS.register("tin_pickaxe", ()-> new PickaxeItem(ModItemTier.TIN, 1, -2.4f, new Item.Properties().group(CtoolsItemGroup.instance)));
     public static final RegistryObject<Item> TIN_AXE = ITEMS.register("tin_axe", ()-> new AxeItem(ModItemTier.TIN, 6.0f, -2.8f, new Item.Properties().group(CtoolsItemGroup.instance)));
     public static final RegistryObject<Item> TIN_SHOVEL = ITEMS.register("tin_shovel", ()-> new ShovelItem(ModItemTier.TIN, 1.5f, -2.6f, new Item.Properties().group(CtoolsItemGroup.instance)));
-    public static final RegistryObject<Item> TIN_HOE = ITEMS.register("tin_hoe", ()-> new HoeItem(ModItemTier.TIN, 0, -2.6f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> TIN_HOE = ITEMS.register("tin_hoe", ()-> new HoeItem(ModItemTier.TIN, -1, -2.6f, new Item.Properties().group(CtoolsItemGroup.instance)));
     //Tin Armor
-    public static final RegistryObject<Item> TIN_HELMET = ITEMS.register("tin_helmet", ()-> new ArmorItem(ModItemTier.TIN, EquipmentSlotType.HEAD, new Item.Properties().group(CtoolsItemGroup.instance)));
-    public static final RegistryObject<Item> TIN_CHESTPLATE = ITEMS.register("tin_chestplate", ()-> new ArmorItem(ModItemTier.TIN, EquipmentSlotType.CHEST, new Item.Properties().group(CtoolsItemGroup.instance)));
-    public static final RegistryObject<Item> TIN_LEGGINGS = ITEMS.register("tin_leggings", ()-> new ArmorItem(ModItemTier.TIN, EquipmentSlotType.LEGS, new Item.Properties().group(CtoolsItemGroup.instance)));
-    public static final RegistryObject<Item> TIN_BOOTS = ITEMS.register("tin_boots", ()-> new ArmorItem(ModItemTier.TIN, EquipmentSlotType.FEET, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> TIN_HELMET = ITEMS.register("tin_helmet", ()-> new ArmorItem(ModArmorMaterial.TIN, EquipmentSlotType.HEAD, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> TIN_CHESTPLATE = ITEMS.register("tin_chestplate", ()-> new ArmorItem(ModArmorMaterial.TIN, EquipmentSlotType.CHEST, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> TIN_LEGGINGS = ITEMS.register("tin_leggings", ()-> new ArmorItem(ModArmorMaterial.TIN, EquipmentSlotType.LEGS, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> TIN_BOOTS = ITEMS.register("tin_boots", ()-> new ArmorItem(ModArmorMaterial.TIN, EquipmentSlotType.FEET, new Item.Properties().group(CtoolsItemGroup.instance)));
+    
+	//Copper Tools
+    public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword", ()-> new SwordItem(ModItemTier.COPPER, 3, -2.0f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", ()-> new PickaxeItem(ModItemTier.COPPER, 1, -2.4f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe", ()-> new AxeItem(ModItemTier.COPPER, 6.0f, -2.8f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel", ()-> new ShovelItem(ModItemTier.COPPER, 1.5f, -2.6f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> COPPER_HOE = ITEMS.register("copper_hoe", ()-> new HoeItem(ModItemTier.COPPER, -1, -2.6f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    //Copper Armor
+    public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet", ()-> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.HEAD, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate", ()-> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.CHEST, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> COPPER_LEGGINGS = ITEMS.register("copper_leggings", ()-> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.LEGS, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register("copper_boots", ()-> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET, new Item.Properties().group(CtoolsItemGroup.instance)));
+    
+	//Steel Tools
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", ()-> new SwordItem(ModItemTier.STEEL, 3, -2.0f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", ()-> new PickaxeItem(ModItemTier.STEEL, 1, -2.4f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", ()-> new AxeItem(ModItemTier.STEEL, 6.0f, -2.8f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", ()-> new ShovelItem(ModItemTier.STEEL, 1.5f, -2.6f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", ()-> new HoeItem(ModItemTier.STEEL, -1, -2.6f, new Item.Properties().group(CtoolsItemGroup.instance)));
+    //Steel Armor
+    public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet", ()-> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.HEAD, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate", ()-> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.CHEST, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings", ()-> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.LEGS, new Item.Properties().group(CtoolsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots", ()-> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.FEET, new Item.Properties().group(CtoolsItemGroup.instance)));
 }
 

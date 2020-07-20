@@ -17,8 +17,16 @@ import com.congueror.clib.init.ItemInit;
 public enum ModArmorMaterial implements IArmorMaterial
 {
 	
-	TIN(ConguerorTools.MOD_ID + ":tin", 5, new int[] {7, 9, 11, 7}, 420, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 6.9f, () -> {
+	TIN(ConguerorTools.MOD_ID + ":tin", 10, new int[] {2, 3, 4, 2}, 13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {
 		return Ingredient.fromItems(ItemInit.TIN_INGOT.get());
+	}),
+	
+	COPPER(ConguerorTools.MOD_ID + ":copper", 14, new int[] {2, 4, 5, 2}, 11, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> {
+		return Ingredient.fromItems(ItemInit.COPPER_INGOT.get());
+	}),
+	
+	STEEL(ConguerorTools.MOD_ID + ":steel", 16, new int[] {3, 5, 7, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.5f, 0.0f, () -> {
+		return Ingredient.fromItems(ItemInit.STEEL_INGOT.get());
 	});
 	
 	private static int[] MAX_DAMAGE_ARRAY = new int[] {16, 16, 16, 16};
@@ -28,15 +36,17 @@ public enum ModArmorMaterial implements IArmorMaterial
 	private final int enchantibility;
 	private final SoundEvent soundEvent;
 	private final float toughness;
+	private final float field_234660_o_;
 	private final LazyValue<Ingredient> repairMaterial;
 	
-	private ModArmorMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountIn, int enchantiblityIn, SoundEvent soundEventIn, float toughnessIn, Supplier<Ingredient> repairMaterialIn) {
+	private ModArmorMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountIn, int enchantiblityIn, SoundEvent soundEventIn, float toughnessIn, float knockbackResistance, Supplier<Ingredient> repairMaterialIn) {
 		this.name = nameIn;
 		this.maxDamageFactor = maxDamageFactorIn;
 		this.damageReductionAmountArray = damageReductionAmountIn;
 		this.enchantibility = enchantiblityIn;
 		this.soundEvent = soundEventIn;
 		this.toughness = toughnessIn;
+		this.field_234660_o_ = knockbackResistance;
 		this.repairMaterial = new LazyValue<>(repairMaterialIn);
 	}
 
@@ -79,6 +89,6 @@ public enum ModArmorMaterial implements IArmorMaterial
 
 	@Override
 	public float func_230304_f_() {
-		return 0;
+		return this.field_234660_o_;
 	}
 }

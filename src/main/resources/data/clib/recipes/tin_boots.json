@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "",
+    "I I",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "#forge:ingots/tin"
+    }
+  },
+  "result": {
+    "item": "clib:tin_boots"
+  }
+}

@@ -5,5 +5,34 @@
 	"item.ctools.tin_shovel": "Tin Shovel",
 	"item.ctools.tin_hoe": "Tin Hoe",
 	
+	"item.ctools.tin_helmet": "Tin Helmet",
+	"item.ctools.tin_chestplate": "Tin Chestplate",
+	"item.ctools.tin_leggings": "Tin Leggings",
+	"item.ctools.tin_boots": "Tin Boots",
+	
+	
+	"item.ctools.copper_sword": "Copper Sword",
+	"item.ctools.copper_pickaxe": "Copper Pickaxe",
+	"item.ctools.copper_axe": "Copper Axe",
+	"item.ctools.copper_shovel": "Copper Shovel",
+	"item.ctools.copper_hoe": "Copper Hoe",
+	
+	"item.ctools.copper_helmet": "Copper Helmet",
+	"item.ctools.copper_chestplate": "Copper Chestplate",
+	"item.ctools.copper_leggings": "Copper Leggings",
+	"item.ctools.copper_boots": "Copper Boots",
+	
+	
+	"item.ctools.steel_sword": "Steel Sword",
+	"item.ctools.steel_pickaxe": "Steel Pickaxe",
+	"item.ctools.steel_axe": "Steel Axe",
+	"item.ctools.steel_shovel": "Steel Shovel",
+	"item.ctools.steel_hoe": "Steel Hoe",
+	
+	"item.ctools.steel_helmet": "Steel Helmet",
+	"item.ctools.steel_chestplate": "Steel Chestplate",
+	"item.ctools.steel_leggings": "Steel Leggings",
+	"item.ctools.steel_boots": "Steel Boots",
+	
 	"itemGroup.ctoolstab": "Congueror's Tools"
 }
