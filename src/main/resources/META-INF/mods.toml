@@ -11,7 +11,7 @@ modId="ctools" #mandatory
 
 version="0.1" #mandatory
 
-displayName="Conguerors Tools" #mandatory
+displayName="Conguerors Additions" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification <here>
 updateJSONURL="http://myurl.me/" #optional

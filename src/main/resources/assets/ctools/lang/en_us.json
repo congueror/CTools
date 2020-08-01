@@ -34,5 +34,28 @@
 	"item.ctools.steel_leggings": "Steel Leggings",
 	"item.ctools.steel_boots": "Steel Boots",
 	
-	"itemGroup.ctoolstab": "Congueror's Tools"
+	
+	"item.ctools.never_gonna_give_you_up_music_disc": "Music Disc",
+	"item.ctools.never_gonna_give_you_up_music_disc.desc": "Rick Astley - Never Gonna Give You Up",
+	"item.never_gonna_give_you_up_disc.sub": "Playing Never Gonna Give You Up",
+	
+	"item.ctools.revenge_music_disc": "Music Disc",
+	"item.ctools.revenge_music_disc.desc": "Captain Sparklez - Revenge",
+	"item.revenge_disc.sub": "Playing Revenge",
+	
+	"item.ctools.viva_la_vida_music_disc": "Music Disc",
+	"item.ctools.viva_la_vida_music_disc.desc": "Coldplay - Viva La Vida",
+	"item.viva_la_vida_disc.sub": "Playing Viva La Vida",
+	
+	"item.ctools.fallen_kingdom_music_disc": "Music Disc",
+	"item.ctools.fallen_kingdom_music_disc.desc": "Captain Sparklez - Fallen Kingdom",
+	"item.fallen_kingdom_disc.sub": "Playing Revenge",
+	
+	"item.ctools.country_roads_music_disc": "Music Disc",
+	"item.ctools.country_roads_music_disc.desc": "John Denver - Take Me Home, Country Roads",
+	"item.country_roads_disc.sub": "Playing Country Roads",
+	
+	
+	"itemGroup.ctoolstab": "Congueror's Tools",
+	"itemGroup.cmisctab": "Congueror's Miscellaneous"
 }

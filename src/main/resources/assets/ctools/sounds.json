@@ -1,0 +1,52 @@
+{
+	"item.never_gonna_give_you_up_disc": {
+		"category": "item",
+		"subtitle": "item.never_gonna_give_you_up_disc.sub",
+		"sounds": [
+			{
+				"name": "ctools:item/never_gonna_give_you_up_disc",
+				"stream": true
+			}
+		]
+	},
+		"item.revenge_disc": {
+		"category": "item",
+		"subtitle": "item.revenge_disc.sub",
+		"sounds": [
+			{
+				"name": "ctools:item/revenge_disc",
+				"stream": true
+			}
+		]
+	},
+		"item.viva_la_vida_disc": {
+		"category": "item",
+		"subtitle": "item.viva_la_vida_disc.sub",
+		"sounds": [
+			{
+				"name": "ctools:item/viva_la_vida_disc",
+				"stream": true
+			}
+		]
+	},
+		"item.fallen_kingdom_disc": {
+		"category": "item",
+		"subtitle": "item.fallen_kingdom_disc.sub",
+		"sounds": [
+			{
+				"name": "ctools:item/fallen_kingdom_disc",
+				"stream": true
+			}
+		]
+	},
+		"item.country_roads_disc": {
+		"category": "item",
+		"subtitle": "item.country_roads_disc.sub",
+		"sounds": [
+			{
+				"name": "ctools:item/country_roads_disc",
+				"stream": true
+			}
+		]
+	}
+} 

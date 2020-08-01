@@ -36,7 +36,7 @@ public enum ModArmorMaterial implements IArmorMaterial
 	private final int enchantibility;
 	private final SoundEvent soundEvent;
 	private final float toughness;
-	private final float field_234660_o_;
+	private final float knockbackResistance;
 	private final LazyValue<Ingredient> repairMaterial;
 	
 	private ModArmorMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountIn, int enchantiblityIn, SoundEvent soundEventIn, float toughnessIn, float knockbackResistance, Supplier<Ingredient> repairMaterialIn) {
@@ -46,7 +46,7 @@ public enum ModArmorMaterial implements IArmorMaterial
 		this.enchantibility = enchantiblityIn;
 		this.soundEvent = soundEventIn;
 		this.toughness = toughnessIn;
-		this.field_234660_o_ = knockbackResistance;
+		this.knockbackResistance = knockbackResistance;
 		this.repairMaterial = new LazyValue<>(repairMaterialIn);
 	}
 
@@ -88,7 +88,7 @@ public enum ModArmorMaterial implements IArmorMaterial
 	}
 
 	@Override
-	public float func_230304_f_() {
-		return this.field_234660_o_;
+	public float getKnockbackResistance() {
+		return this.knockbackResistance;
 	}
 }

@@ -3,11 +3,11 @@
   "pattern": [
     "III",
     "I I",
-    ""
+    "   "
   ],
   "key": {
     "I": {
-      "item": "#forge:ingots/steel"
+      "item": "forge:ingots/steel"
     }
   },
   "result": {

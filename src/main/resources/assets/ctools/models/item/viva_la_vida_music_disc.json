@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "ctools:items/viva_la_vida_music_disc"
+		}
+}

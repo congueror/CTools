@@ -12,15 +12,15 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0'
-group = 'com.yourname.modid'
-archivesBaseName = 'modid'
+version = '0.1'
+group = 'com.congueror.ctools'
+archivesBaseName = 'ctools'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
 minecraft {
 
-    mappings channel: 'snapshot', version: '20200707-1.16.1'
+    mappings channel: 'snapshot', version: '20200723-1.16.1'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -67,10 +67,10 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
+            args '--mod', 'ctools', '--all', '--output', file('src/generated/resources/'), '--existing', sourceSets.main.resources.srcDirs[0]
 
             mods {
-                examplemod {
+                ctools {
                     source sourceSets.main
                 }
             }
@@ -86,7 +86,7 @@ repositories {
 
 dependencies {
 
-    minecraft 'net.minecraftforge:forge:1.15.2-31.2.19'
+    minecraft 'net.minecraftforge:forge:1.16.1-32.0.98'
     
     implementation fg.deobf("something.congueror:clib:0.1")
     
