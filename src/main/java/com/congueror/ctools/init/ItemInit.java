@@ -22,16 +22,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemInit 
-{
-    public static double tin_sword_double = CToolsConfig.tinsword_damage.get();
-    public static float tin_sword_float = (float) tin_sword_double;
-	
+{	
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ConguerorTools.MOD_ID);
 	//AttackDamage = Tier + init + 1		AttackSpeed = float + 4
 	
 	//Tin Tools
     public static final RegistryObject<Item> TIN_SWORD = ITEMS.register("tin_sword", ()-> 
-    new SwordItem(ModItemTier.TIN, CToolsConfig.tinsword_damage.get(), tin_sword_float, new Item.Properties().group(CToolsItemGroup.instance)));
+    new SwordItem(ModItemTier.TIN, CToolsConfig.tinsword_damage.get(), -2, new Item.Properties().group(CToolsItemGroup.instance)));
     
     public static final RegistryObject<Item> TIN_PICKAXE = ITEMS.register("tin_pickaxe", ()-> 
     new PickaxeItem(ModItemTier.TIN, 1, -2.4f, new Item.Properties().group(CToolsItemGroup.instance)));
