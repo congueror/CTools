@@ -34,6 +34,8 @@
 	"item.ctools.steel_leggings": "Steel Leggings",
 	"item.ctools.steel_boots": "Steel Boots",
 	
+	"entity.ctools.music_merchant_entity": "Music Merchant",
+	
 	
 	"item.ctools.never_gonna_give_you_up_music_disc": "Music Disc",
 	"item.ctools.never_gonna_give_you_up_music_disc.desc": "Rick Astley - Never Gonna Give You Up",
@@ -54,6 +56,10 @@
 	"item.ctools.country_roads_music_disc": "Music Disc",
 	"item.ctools.country_roads_music_disc.desc": "John Denver - Take Me Home, Country Roads",
 	"item.country_roads_disc.sub": "Playing Country Roads",
+	
+	"item.ctools.gravity_falls_music_disc": "Music Disc",
+	"item.ctools.gravity_falls_music_disc.desc": "Brad Breeck - Gravity Falls Main Title Theme",
+	"item.gravity_falls_disc.sub": "Playing Gravity Falls Theme",
 	
 	
 	"itemGroup.ctoolstab": "Congueror's Tools",

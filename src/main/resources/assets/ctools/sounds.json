@@ -48,5 +48,15 @@
 				"stream": true
 			}
 		]
+	},
+		"item.gravity_falls_disc": {
+		"category": "item",
+		"subtitle": "item.gravity_falls_disc.sub",
+		"sounds": [
+			{
+				"name": "ctools:item/gravity_falls_disc",
+				"stream": true
+			}
+		]
 	}
 } 

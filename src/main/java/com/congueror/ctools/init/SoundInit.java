@@ -27,4 +27,7 @@ public class SoundInit
 	
 	public static final Lazy<SoundEvent> COUNTRY_ROADS_LAZY = Lazy.of(() -> new SoundEvent(new ResourceLocation(ConguerorTools.MOD_ID, "item.country_roads_disc")));
 	public static final RegistryObject<SoundEvent> COUNTRY_ROADS_DISC = SOUNDS.register("item.country_roads_disc.disc", COUNTRY_ROADS_LAZY);
+	
+	public static final Lazy<SoundEvent> GRAVITY_FALLS_LAZY = Lazy.of(() -> new SoundEvent(new ResourceLocation(ConguerorTools.MOD_ID, "item.gravity_falls_disc")));
+	public static final RegistryObject<SoundEvent> GRAVITY_FALLS_DISC = SOUNDS.register("item.gravity_falls_disc.disc", GRAVITY_FALLS_LAZY);
 }

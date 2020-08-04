@@ -130,5 +130,8 @@ public class ItemInit
     
     public static final RegistryObject<Item> COUNTRY_ROADS_MUSIC_DISC = ITEMS.register("country_roads_music_disc", () -> 
     new CustomMusicDisc(2, SoundInit.COUNTRY_ROADS_LAZY.get(), new Item.Properties().maxStackSize(1).rarity(Rarity.RARE).group(CMiscItemGroup.instance)));
+    
+    public static final RegistryObject<Item> GRAVITY_FALLS_MUSIC_DISC = ITEMS.register("gravity_falls_music_disc", () -> 
+    new CustomMusicDisc(2, SoundInit.GRAVITY_FALLS_LAZY.get(), new Item.Properties().maxStackSize(1).rarity(Rarity.RARE).group(CMiscItemGroup.instance)));
 }
 
