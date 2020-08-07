@@ -1,7 +1,7 @@
 package com.congueror.ctools.util;
 
 import com.congueror.ctools.ConguerorTools;
-import com.congueror.ctools.entities.musicmerchant.MusicMerchantRenderer;
+import com.congueror.ctools.entities.merchant.musicmerchant.MusicMerchantRenderer;
 import com.congueror.ctools.init.EntityInit;
 
 import net.minecraftforge.api.distmarker.Dist;

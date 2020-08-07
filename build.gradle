@@ -88,9 +88,9 @@ dependencies {
 
     minecraft 'net.minecraftforge:forge:1.16.1-32.0.98'
     
-    implementation fg.deobf("something.congueror:clib:0.1")
+    implementation fg.deobf("something.congueror:clib:0.1") 
     
-
+    implementation fg.deobf("something.congueror:worldedit:0.2")
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"

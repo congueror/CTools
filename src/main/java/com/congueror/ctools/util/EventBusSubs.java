@@ -1,7 +1,7 @@
 package com.congueror.ctools.util;
 
 import com.congueror.ctools.ConguerorTools;
-import com.congueror.ctools.entities.musicmerchant.MusicMerchantEntity;
+import com.congueror.ctools.entities.merchant.musicmerchant.MusicMerchantEntity;
 import com.congueror.ctools.init.EntityInit;
 
 import net.minecraft.entity.EntityType;
